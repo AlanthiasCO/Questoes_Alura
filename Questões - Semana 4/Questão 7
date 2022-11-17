@@ -1,6 +1,7 @@
 public class PessoaFisica {
+	
 	private String cpf;
-	private String nome;
+	private String titular;
 	
 	public String getCpf(){
 		return this.cpf;
@@ -9,22 +10,22 @@ public class PessoaFisica {
 	public void setCpf(String cpf){
 		if (!valida(cpf)){
 			this.cpf = "0";
-			System.out.println("O cpf nao eh invalido!");
+			System.out.println("\nO cpf nao eh invalido!");
 		}else{
 			this.cpf = cpf;
-			System.out.println("O cpf eh valido!");
+			System.out.println("\nO cpf eh valido!");
 		}		
 	}
 	
-	public String getNome(){
-		return this.nome;
-	}
-	
-	public void setNome(String nome){
+	public void setTitular(String titular){
 		this.nome = nome;
 	}
 	
-	//cadastras a pessoa
+	public String getTitular(){
+		return this.titular;
+	}
+	
+	//cadastrar a pessoa
 	PessoaFisica(String nome, String cpf){
 		this();
 		setNome(nome);
@@ -38,7 +39,7 @@ public class PessoaFisica {
 		return false;
 	}
 	
-	public void mostraDados(){
-		System.out.println("Nome:" + getNome());
+	public void imprimirDados(){
+		System.out.println("Nome:" + getTitular());
 		System.out.println("\nCPF:" + getCpf());
 	}
