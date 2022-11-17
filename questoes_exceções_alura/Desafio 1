@@ -1,0 +1,3 @@
+O que acontece se acabar a memória da Java Virtual Machine?
+
+Resposta: O seu programa fica sem recursos para continuar sua execução interrompendo, instantaneamente, sua execução. Também vai apresentar o errojava.lang.OutOfMemoryError, que é um error em vez de uma Exception	
